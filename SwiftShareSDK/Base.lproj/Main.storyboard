@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftShareSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkU-L2-JCr">
+                                <rect key="frame" x="285" y="252" width="30" height="30"/>
+                                <state key="normal" title="分享"/>
+                                <connections>
+                                    <action selector="shareTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vrc-Dl-NJP"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tz-aJ-wxa">
+                                <rect key="frame" x="250" y="290" width="100" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="EtM-PE-5H5"/>
+                                    <constraint firstAttribute="width" constant="100" id="pNZ-XS-PeK"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PY-BT-sCB">
+                                <rect key="frame" x="263" y="318" width="75" height="30"/>
+                                <state key="normal" title="第三方登录"/>
+                                <connections>
+                                    <action selector="loginTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aGn-JD-FlU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8PY-BT-sCB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DP4-iT-e0z"/>
+                            <constraint firstItem="5tz-aJ-wxa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="O3e-pT-Vdq"/>
+                            <constraint firstItem="CkU-L2-JCr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RKE-vj-rR7"/>
+                            <constraint firstItem="5tz-aJ-wxa" firstAttribute="top" secondItem="CkU-L2-JCr" secondAttribute="bottom" constant="8" id="XvC-RU-27g"/>
+                            <constraint firstItem="8PY-BT-sCB" firstAttribute="top" secondItem="5tz-aJ-wxa" secondAttribute="bottom" constant="8" id="kqo-1m-0fs"/>
+                            <constraint firstItem="5tz-aJ-wxa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xN6-Od-NGF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
